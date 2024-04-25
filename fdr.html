@@ -1,0 +1,481 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+
+  
+  
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+
+
+
+  
+  
+  
+  <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+
+
+
+
+  
+  
+  
+  <title>Frequency Domain Analysis</title>
+</head>
+
+
+<body background="green.gif" bgcolor="#ffffff">
+
+
+
+
+
+<table border="0">
+
+
+
+
+    <tbody>
+
+
+
+    <tr>
+
+
+
+
+        <td>&nbsp; </td>
+
+
+
+
+        <td width="500">
+      
+      
+      
+      <p align="center"><font face="Arial Black" size="5"><strong>Frequency Domain Analysis</strong></font></p>
+
+
+
+
+        </td>
+
+
+
+
+    </tr>
+
+
+
+
+    <tr>
+
+
+
+
+        <td><img src="roswell.gif" height="80" width="103"></td>
+
+
+
+
+        <td width="500">&nbsp;</td>
+
+
+
+
+    </tr>
+
+
+
+
+    <tr>
+
+
+
+
+        <td>&nbsp;</td>
+
+
+
+
+        <td width="500"><font face="Times New Roman"><br>
+
+
+
+
+        </font><font face="Arial">Frequency domain analysis (FDA) encompasses a 
+        range of mathematical research techniques for revealing the frequency/spectral components 
+        of data, which often permits new insights into the fundamental 
+        mechanisms behind the data.</font>
+      
+      
+      
+      <p><font face="Arial">The diagram 
+        below shows monthly average temperature data from Casey base in 
+        Antarctica in red, and a Fourier transform of the of the data in blue.&nbsp; 
+        The frequency domain representation shows that the data is composed of a 
+        small number of dominant frequencies and some 'noise'.</font></p>
+
+
+
+
+        
+      
+      
+      
+      <p align="center">
+        <img src="fdr1.GIF" border="0" height="434" width="454"></p>
+
+
+
+
+        
+      
+      
+      
+      <p><font face="Arial">It is also possible to analyse the frequency 
+        components of 2D data, including images.&nbsp; The image below shows an 
+        internal courtyard of L'H&ocirc;tel des Invalides in Paris.</font></p>
+
+
+
+
+        
+      
+      
+      
+      <p align="center">
+        <img src="fdr4.gif" border="0" height="192" width="465"></p>
+
+
+
+
+        
+      
+      
+      
+      <p><font face="Arial">By extracting the horizontal and vertical discrete 
+        Fourier transforms of the image, and converting these to periodograms 
+        (period = 1/frequency), we can quantitatively extract information about 
+        the principal architectural features in the image.&nbsp; The horizontal 
+        periodogram is given below.&nbsp; The peaks indicate three main 
+        horizontal feature dimensions of approximately 22, 39 and 44 pixels.&nbsp; 
+        For comparison, the average height of the people in the image is about 
+        20 pixels.</font></p>
+
+
+
+
+        
+      
+      
+      
+      <p align="center">
+        <img src="fdr5.gif" border="0" height="391" width="468"></p>
+
+
+
+
+        
+      
+      
+      
+      <p><font face="Arial">Another important tool in FDA is the wavelet 
+        transform.&nbsp; This tool reveals not only the spectral components in 
+        data, but also how those components vary with respect to the independent 
+        variable (time, displacement, etc).&nbsp; Wavelet analysis of the Casey 
+        temperature data suggests that the temperature data could be modelled by 
+        the sum of three principal frequency components plus the addition of two 
+        normally distributed random noise components.</font></p>
+
+
+
+
+        
+      
+      
+      
+      <p><font face="Arial">The 2D discrete wavelet transform decomposes an 
+        image into an orthogonal set of sub-images representing horizontal, 
+        vertical and diagonal frequency components at dyadic scales.&nbsp; This 
+        ability to capture image features at different scales and orientations 
+        means that the 2DDWT is an excellent method for representing texture.&nbsp; 
+        Consider the carbon fibre composite sample below.</font></p>
+
+
+
+
+        
+      
+      
+      
+      <p align="center">
+        <img src="fdr6.gif" border="0" height="409" width="409"></p>
+
+
+
+
+        
+      
+      
+      
+      <p><font face="Arial">We can use wavelet texture analysis to 
+        automatically classify the surface finish into 'good' and 'bad' 
+        categories.&nbsp; Taking a set of 11 samples, 1-5 were good, and 6-11 
+        were bad.&nbsp; We use the 2DDWT decomposition to create a texture 
+        feature vector set.&nbsp; Using principal components analysis we can 
+        devise a linear combination of the feature vector elements that explains 
+        a majority of the variation in the original images.&nbsp; Plotting the 
+        1st and 2nd principal components, we can locate the original samples in 
+        the texture space.&nbsp; Note that all the good sample are in the lower 
+        half of the plot.&nbsp; We can now take an arbitrary sample, compute 
+        the 2DDWT decomposition and using the 1st and 2nd principal components, 
+        we can automatically classify the sample as good or bad.</font></p>
+
+
+
+
+        
+      
+      
+      
+      <p align="center">
+        <img src="fdr7.gif" border="0" height="347" width="449"></p>
+
+
+
+
+        
+      
+      
+      
+      <p><font face="Arial">The diagram below shows daily average data for 
+        water turbidity, and the continuous wavelet transform of that data.&nbsp; 
+        The frequency domain representation shows strong components with a 
+        90-120 period across all of the data, as well as higher frequency 
+        components present around day 250.&nbsp; This raises the interesting 
+        question of why these components are observed and what do they 
+        represent?</font></p>
+
+
+
+
+        
+      
+      
+      
+      <p align="center">
+        <img src="fdr2.GIF" border="0" height="460" width="466"></p>
+
+
+
+
+        
+      
+      
+      
+      <p><font face="Arial">Note in the diagram above that wavelet analysis 
+        produces information from the data over a wide range of scales.&nbsp; 
+        This enables it to characterise features that might exist in the same 
+        data from the nano-scale to the macro-scale. </font></p>
+
+
+
+
+        
+      
+      
+      
+      <p><font face="Arial">FDA can be a useful tool in the analysis of data 
+        and the development of quantitative models based on data.&nbsp; Wavelet 
+        analysis can also be used for data compression, noise removal and data 
+        reconstruction.&nbsp; The diagrams below show raw experimental data in 
+        red, and the de-noised signal obtained from wavelet analysis in blue.</font></p>
+
+
+
+
+        
+      
+      
+      
+      <p align="center">
+        <img src="fdr3.gif" border="0" height="360" width="456"></p>
+
+
+
+
+        
+      
+      
+      
+      <p><font face="Arial">Applications of wavelet analysis 
+        in the literature include:</font></p>
+
+
+
+
+        
+      
+      
+      
+      <ul>
+
+
+
+
+          <li><font face="Arial">Estimation of elastic moduli of composite 
+          materials at high temperature by analysis of impact sounds.</font></li>
+
+
+
+
+          <li><font face="Arial">Estimation of properties of metal coatings by 
+          analysis of spectral components in laser generated Rayleigh waves.</font></li>
+
+
+
+
+          <li><font face="Arial">Analysis of Southern Oscillation Index data to 
+          identify long-term variability in the El Ni&#328;o.</font></li>
+
+
+
+
+          <li><font face="Arial">Analysis of complex automotive suspension 
+          vibration to reduce impact harshness.</font></li>
+
+
+
+
+          <li><font face="Arial">Structural damage detection in buildings based 
+          on vibration monitoring.</font></li>
+
+
+
+
+          <li><font face="Arial">Analysis of rainfall/runoff relationships in 
+          karstic geological system.</font></li>
+
+
+
+
+          <li><font face="Arial">Analysis of rainfall-runoff data variability to 
+          isolate climatic effects from anthropogenic effects.</font></li>
+
+
+
+
+          <li><font face="Arial">Identifying underlying trends in employment 
+          data for C++ and Java programmers.</font></li>
+
+
+
+
+          <li><font face="Arial">Objective classification of fabric pilling 
+          based on the two-dimensional discrete wavelet transform.</font></li>
+
+
+
+
+          <li><font face="Arial">Combined nano- to micro-scale classification of 
+          tribological surfaces.</font></li>
+
+
+
+
+        
+      
+      
+      
+      </ul>
+
+
+
+
+          
+      
+      
+      
+      <p><font face="Arial">In fact, whatever your data, FDA will probably
+          be able to tell you something about it that you didn't previously
+          know.</font></p>
+
+
+
+
+        
+      
+      
+      
+      <p><font face="Arial">&nbsp;</font></p>
+
+
+
+      </td>
+
+
+
+
+    </tr>
+
+
+
+
+    <tr>
+
+
+
+
+        <td>&nbsp;</td>
+
+
+
+
+        <td width="500">
+      
+      
+      
+      <hr color="#000080" size="6">
+        
+      
+      
+      
+      <address>
+            Last updated: 19 January 2020
+
+
+
+            
+
+             
+        </address>
+
+
+
+
+        </td>
+
+
+
+
+    </tr>
+
+
+
+
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+</body>
+</html>
