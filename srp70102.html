@@ -1,0 +1,485 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<TITLE>A World Wide Web-based Active Tutorial in Accounting Principles for Engineering and Technology Students</TITLE>
+
+<META NAME="GENERATOR" CONTENT="Internet Assistant for Microsoft Word 2.04z">
+</HEAD>
+<BODY bgcolor="#FFFFFF">
+<P>
+<FONT SIZE=2 FACE="Times New Roman">A WORLD WIDE WEB-BASED ACTIVE
+TUTORIAL IN ACCOUNTING PRINCIPLES FOR ENGINEERING AND TECHNOLOGY
+STUDENTS<BR>
+<BR><BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">Stuart R. Palmer</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">School of Engineering and
+Technology,</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">Deakin University,</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">Geelong  3217,</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">Australia<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">ABSTRACT: This paper presents
+a computer-based tutorial in accounting principles for engineering
+and technology students.  The tutorial is designed to lead students
+through existing print-based course material, but rather than
+passively transferring this material to the computer screen, internal
+links have been created to allow the student to 'actively' control
+the progress of the tutorial.  The tutorial is designed as a supplement
+to traditional on- and off-campus teaching.  The tutorial is based
+on hypertext markup language (HTML), the authoring language of
+the World Wide Web (WWW).  HTML allows the creation of computer-based
+documents that contain 'hyperlinks' to other parts of the document,
+or other documents stored anywhere on the Internet.  It is through
+the use of hyperlinks that the student controls the progress of
+the tutorial, either selecting the next step, or requesting additional
+explanation of concepts presented.  The accounting tutorial is
+presented as a framework for discussing the techniques for developing
+such computer-based learning materials, and the benefits and limitations
+of such materials.<BR>
+<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">INTRODUCTION<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">Accounting is recognised as
+one of the skills necessary for a professional engineer to operate
+effectively in a modern organisation.  All Australian engineering
+undergraduate courses are required to include the basic principles
+of accounting.  This paper presents a computer-based tutorial
+in accounting principles based on the hypertext markup language
+(HTML).  The principles of HTML are presented, and the tutorial
+is used as an example of how a computer-based tutorial can be
+constructed using HTML.<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">ACCOUNTING STUDIES FOR ENGINEERING
+STUDENTS<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">To operate effectively in
+a modern organisation, the professional engineer needs a knowledge
+of accounting skills:<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">&quot;... it is desirable
+to have a broad understanding of accounting, for two reasons.
+ The first is that engineers need to be able to relate to and
+to communicate with managers employed in the accounting and finance
+functions.  ...  A second reason is that engineers need to make
+use of accounting information in performing their managerial functions.&quot;
+[1].<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">Engineering graduates need
+not be experts in the field of accounting, we already have accountants
+for that, but they must have a knowledge of accounting principles
+and practice.<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">In addition to this justification,
+the Institution of Engineers, Australia (IEAust), the accrediting
+body for Australian engineering undergraduate courses, mandates
+the inclusion of course material covering the principles of accounting.
+ Both its 'Accreditation Policies and Procedures relating to Professional
+Engineering Undergraduate Courses' [2] and 'National Competency
+Standards for Professional Engineers' [3] contain references to
+the need to develop skills in the areas of accounting and finance.
+<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">COMPUTERS IN ENGINEERING EDUCATION
+<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">Despite misgivings about issues
+such as cost, lack of co-ordination and lack of teacher skills,
+there is wide agreement that computers have a role to play in
+education [4], [5], [6] and [7].  For engineering education, computer
+applications can include computer programming, numerical analysis,
+computer simulation, computer aided design, electronic communications,
+information retrieval and computer aided learning and assessment.
+ The use of computers in education is particularly relevant to
+engineering education, as the computer has become one of the central
+tools of the practising engineer, whether it be for CAD, project
+planning, process control, budgeting, data communications or software
+development.<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">Developments in computer and
+communications technology such as the Internet, CD-ROMs, graphical
+user interfaces, sound recording and playback, video playback,
+high speed modems, etc. have become collectively know as 'new
+media' or multimedia.  Again, with some caveats of current and
+inherent limitations [8], there is an important role for new media
+to play in education, including distance education, teleconferencing,
+courseware delivery, on-line experiments, high quality simulations,
+group collaboration, etc.  As well as offering new techniques
+for traditional education, these new media will, in the longer
+term, revolutionise the nature of education.  In the recent review
+of Australian engineering education it was noted:<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">&quot;Right up to the present,
+individual lecturers have continued to prepare in detail their
+own preferred coverage of each particular subject, and present
+it in classic face-to-face lecture mode.  ...  The monopolistic
+approach is about to be swept away.  Why should any lecturer continue
+to perform in traditional mode year after year when world-best
+courseware will be available on the Internet?  Why should any
+student settle for less than the best?&quot; [9].<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">THE WORLD WIDE WEB AND HYPERTEXT
+MARKUP LANGUAGE<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">Along with computer-based
+assessment and computer aided learning packages, the new medium
+that is having the most impact on education is the World Wide
+Web (WWW), or 'the Web'.  The Web has become synonymous with the
+Internet, as it offers in an integrated graphical environment
+all of the services of the Internet including email, newsgroups,
+Telnet, FTP, Gopher, etc., and extends these services with hypertext
+markup language (HTML).  The basic unit of information transferred
+over the Web is the 'page'.  A Web page is composed of HTML statements
+that allow a Web browser (such as Netscape Navigator or Microsoft
+Explorer) to recreate the page for the remote viewer.  It is important
+to note that HTML documents can exist entirely independently of
+the Internet, they can be distributed over a laboratory local
+area network or even on a floppy disk.<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">Web pages may contain any
+of the new media elements - text, images, sounds, movies, animations,
+3D interactive images and more.  Most importantly, Web pages may
+contain links to other Web pages or multimedia elements, allowing
+'webs' of information with complex links to be constructed as
+outlined in Figure 1 below.  In the quotation below, for 'Internet-based'
+read 'Web-based' or 'hypertext-based', and for 'trainee' read
+'student':<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">&quot;Internet-based training
+is modelled on a different learning method.  Until recently, most
+training was linear: A trainee learned point A, and then point
+B.  Non-linear learning, enabling a trainee to jump from point
+A to point D to point B, is a hallmark of CBT [computer-based
+training] and the Internet.  Without the constraints of traditional
+classroom training, trainees can repeat difficult material or
+skip over previously learned material.&quot; [10].<BR>
+</FONT>
+<P>
+<CENTER><IMG SRC="img00003.gif"><BR>
+</CENTER>
+<P>
+<CENTER><B><FONT SIZE=2 FACE="Times New Roman">Figure 1 - The
+relationship between Web pages and hypertext markup language.
+<BR>
+</FONT></B></CENTER>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">The information presentation
+and navigation features of the Web and HTML offer many exciting
+pedagogical possibilities in education, an excellent treatment
+of the possibilities, limitations and implications of hypertext
+(sometimes now referred to as hypermedia due to the inclusion
+of media other than simple text) is given in Snyder [11].<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">THE TUTORIAL<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">The tutorial presented here
+is constructed from a series of linked Web pages using HTML statements.
+ It is comprised principally of text, incorporating some graphic
+images.  The content presented in the tutorial is an introduction
+to accounting principles.  The tutorial leads students through
+existing print-based course material, but rather than passively
+presenting this material in a linear fashion on the computer screen,
+the hypertext linking features of HTML have been used to create
+internal links to allow the student to 'actively' control the
+progress and sequence of the tutorial.  So, while minimal new
+material has been developed, the existing content has been leveraged
+into a hypertext form that can be used in a stand-alone manner,
+or to support the print-based material.  The remainder of this
+section presents aspects of the tutorial as a framework for discussing
+the principals of Web design.<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">The opening screen of the
+tutorial is given in Figure 2 below, this provides a brief introduction
+and explanation to the tutorial.  The remainder of the first Web
+page, or 'home page', is shown in Figure 3 below, where the suggested
+sequence of the tutorial is given.  From this it can be seen that
+the tutorial covers setting up the accounting system, processing
+financial transactions through to producing periodic financial
+reports.  While one of the previously claimed benefits of hypertext
+is the capability for the student to progress through the material
+in the sequence he or she desires, it is important to provide
+some structure so students do not become 'lost'.  The home page
+is a reference and index point that students can always return
+to:<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">&quot;A hierarchical organisation
+of a hypertext provides convenient navigation for users who can
+use the structure to navigate, thus freeing them to concentrate
+more on what is being presented instead of worrying where to go
+next.&quot; [12].<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">The <U>underlined</U> entries
+in Figures 2 and 3 are hyperlinks to other hypertext entities,
+they are activated with a mouse click.  Each item in the suggested
+sequence is, in fact, a link to the Web page(s) that contain the
+relevant material.  At the bottom of the page there is an email
+link that when activated opens a window in which the student can
+type a message and have it automatically emailed to the author.
+<BR>
+</FONT>
+<P>
+<CENTER><IMG SRC="img00004.gif"><BR>
+</CENTER>
+<P>
+<CENTER><B><FONT SIZE=2 FACE="Times New Roman">Figure 2 - The
+opening screen (home page) of the tutorial.<BR>
+<BR>
+</FONT></B></CENTER>
+<P>
+<CENTER><IMG SRC="img00005.gif"><BR>
+</CENTER>
+<P>
+<CENTER><B><FONT SIZE=2 FACE="Times New Roman">Figure 3 - The
+suggested sequence of the tutorial with hyperlinks to other pages.
+<BR>
+</FONT></B></CENTER>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">When one of the sequence links
+shown in Figure 3 is activated, the screen format changes to that
+shown in Figure 4 below.  At the bottom of the screen there is
+a reserved area that does not change and cannot be scrolled off
+the screen.  Here there is a 'navigation button' labelled 'MENU'
+that, when pressed, will return the user to the home page.  This
+button is displayed on all pages, facilitating easy return to
+the home page should the user become 'lost'.  Above this fixed
+area is a scrollable area where course material is presented.
+ Figure 4 contains some of the material from the 'Establishing
+the accounts' section.  Individual financial transactions are
+presented, and are actually hyperlinks to detailed explanations
+of what accounts are affected by each transaction.  If a detailed
+explanation is not required, students may progress by scrolling
+down the top window.  When they reach the end of the current page
+they may either return to the home page and select the next item,
+or they can use the shortcut link to the next page, in Figure
+4 this link is labelled 'the chart of accounts'.  These shortcut
+links are provided at the bottom of each page.<BR>
+</FONT>
+<P>
+<CENTER><IMG SRC="img00006.gif"><BR>
+</CENTER>
+<P>
+<CENTER><B><FONT SIZE=2 FACE="Times New Roman">Figure 4 - Material
+from the 'Establishing the accounts' section, showing a fixed
+navigation button.<BR>
+</FONT></B></CENTER>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">If a user selects one of the
+transactions given in Figure 4, a detailed explanation is provided,
+an example is shown in Figure 5 below.  Note again that the screen
+is divided into two parts.  The top area provides the learning
+material, and the lower area provides navigation aides.  This
+time a new navigation button is provided that allows the user
+to 'RETURN' to the calling page, as well as the 'MENU' button
+to jump to the home page index.<BR>
+</FONT>
+<P>
+<CENTER><IMG SRC="img00007.gif"><BR>
+</CENTER>
+<P>
+<CENTER><B><FONT SIZE=2 FACE="Times New Roman">Figure 5 - A detailed
+explanation of one of the financial transactions, showing navigation
+buttons.<BR>
+</FONT></B></CENTER>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">DEVELOPMENT METHODOLOGY<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">There are many options for
+the development of hypertext/Web learning materials.  In this
+case, the tutorial was developed directly from existing print-based
+material by converting it to ASCII text files and then manually
+inserting HTML markup tags to recreate the appearance of the original
+material and insert the required hyperlinks.  This editing was
+performed using a wordprocessor.  Where the aim is to convert
+existing material to Web format, there exist a number of utilities
+to perform this task, such as Microsoft's 'Internet Assistant
+for Word', which can automatically convert Microsoft Word files
+to Web format.  There also exist many software packages specifically
+designed for authoring new Web/HTML documents from the ground
+up, these generally provide advanced document control and multimedia
+features.<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">APPLICATIONS AND LIMITATIONS
+OF THE TUTORIAL<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">The tutorial presented is
+but one example of computer-based training/learning.  The tutorial
+is based on the language of the Web, that is hypertext markup
+language.  The use of HTML provides a number of benefits:<BR>
+</FONT>
+<UL>
+<LI><FONT SIZE=2 FACE="Times New Roman">it inherently provides
+the hyperlinking feature that permits the user freedom to navigate
+in a non-linear fashion;</FONT>
+<LI><FONT SIZE=2 FACE="Times New Roman">many options exist for
+the conversion of existing electronic documents into HTML format,
+from simple manual methods to sophisticated automatic tools;</FONT>
+<LI><FONT SIZE=2 FACE="Times New Roman">HTML is computer platform
+independent, Web browsers exist for all popular operating systems,
+Windows, Mac and Unix, and browsers such as Netscape Navigator
+and Microsoft Internet Explorer are currently free or free for
+educational use;</FONT>
+<LI><FONT SIZE=2 FACE="Times New Roman">HTML includes many other
+features that aid in instructional presentation, including frames,
+tables, forms, etc.; and</FONT>
+<LI><FONT SIZE=2 FACE="Times New Roman">HTML can be delivered
+on a stand-alone computer, via a floppy disk, across an office
+network or around the world via the Internet.</FONT>
+</UL>
+<P>
+<FONT SIZE=2 FACE="Times New Roman"></FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">This application of computer-based
+learning (CBL) is relatively simple, incorporating only text and
+graphics.  It is not intended that this tutorial would ever be
+used as a replacement for existing learning materials, rather
+it is intended as a supplement only.  Nichols identifies appropriate
+applications for computer-based training as:<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">&quot;mathematical skills
+ ...  mathematical relations  ...  troubleshooting skills  ...
+[and] management skills.&quot; [13].<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">Obviously, many areas include
+or are covered by these suggestions, so it is not surprising that
+we see a plethora of CBL applications.  However, CBL is not the
+panacea to all learning requirements, and it is important to understand
+the limitations of this approach, including:<BR>
+</FONT>
+<UL>
+<LI><FONT SIZE=2 FACE="Times New Roman">the cost of obtaining
+and maintaining hardware, software and data communications infrastructure;</FONT>
+<LI><FONT SIZE=2 FACE="Times New Roman">the cost of developing
+computer learning packages; and</FONT>
+<LI><FONT SIZE=2 FACE="Times New Roman">CBL is not suitable for
+all learning applications, ie. it is not the best way to learn
+'hands-on', practical skills.</FONT>
+</UL>
+<P>
+<FONT SIZE=2 FACE="Times New Roman"></FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">CONCLUSION<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">A Web-based tutorial in the
+principles of accounting for engineering and technology students
+has been developed.  The hypertext markup language was used to
+transform existing print-based material from a linear format to
+a non-linear, hypertext format where the student plays an active
+role in the sequence and content of their instruction.  While
+no formal evaluation of the tutorial has yet been possible, informal
+feedback from students who have used the tutorial indicates that
+it is a valuable supplement to traditional teaching.<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">ACKNOWLEDGEMENT<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">The tutorial project was one
+of the developments arising from a fellowship awarded to the author
+by the Deakin Centre for Academic Development (DCAD) for innovation
+in teaching learning.  The author wishes to thank DCAD for the
+fellowship.<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">REFERENCES<BR>
+</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">1.  Newman, R.L. (1995) Accounting
+and Management, IN Samson, D. (Ed), <I>Management for Engineers</I>,
+2nd edn. Melbourne, Longman Cheshire.</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">2. Institution of Engineers,
+Australia (1991) <I>Accreditation Policies and Procedures relating
+to Professional Engineering Undergraduate Courses</I>. Barton,
+IEAust.</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">3. Institution of Engineers,
+Australia (1993) <I>National Competency Standards for Professional
+Engineers (Stages 1 and 2)</I>. Barton, IEAust.</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">4. Baliga, B. &amp; Palmer,
+S.R. (1996) Use of the Internet for Flexible Delivery and Enhancement
+of Teaching and Learning. <I>Proc. Australasian Association for
+Engineering Education Eight Annual Convention and Conference</I>,
+Sydney, Australia, 201-205.</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">5. Shears, L.W. &amp; Dale,
+E.C. (1983) <I>Computers in Education</I>, Melbourne, Office of
+the Co-ordinator General.</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">6. Nishinosono, H. (1990)
+International Cooperation for Educational Use of Computers in
+Asia and the Pacific through UNESCO and Recent Trends in Japan.
+<I>Proc. World Conference on Computers in Education</I>, Sydney,
+Australia, 5-10.</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">7. Russell, G. (1992) Hopes
+and Disappointments: What Computer Educators Can Learn from the
+Lessons of the 1980s. <I>Proc. Tenth Annual Australian Computing
+in Education Conference</I>, Melbourne, Australia, 154-161.</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">8. Martin, T.B. (1985) Using
+the Internet and the World Wide Web to Deliver Engineering Education.
+<I>Proc. 1995 International Congress of Engineering Deans and
+Industry Leaders</I>, Melbourne, Australia, 229-235.</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">9. Johnson, P., Chair (1996),
+<I>Changing the Culture: Engineering Education into the Future</I>.
+Barton, IEAust.</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">10. Glener, D. (1996) The
+Promise of Internet-based Training, <I>Training and Development</I>,
+50, 9, 57-58.</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">11. Snyder, I. (1996) <I>Hypertext:
+The Electronic Labyrinth</I>. Melbourne, Melbourne University
+Press.</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">12. Smeaton, A.F. (1991) Using
+Hypertext for Computer Based Learning, <I>Computers in Education</I>,
+17, 3,173-179.</FONT>
+<P>
+<FONT SIZE=2 FACE="Times New Roman">13. Nichols, G.W. (1996) Applications
+of CBT, <I>http://www.ucalgary.ca/~gwnichol/cbt_tut/apps.htm</I>.
+<BR>
+</FONT>
+</BODY>
+</HTML>
